@@ -3,93 +3,105 @@ export type Service = {
   name: string;
   description: string;
   duration: number;
+  price: number;
   image: string;
   longDescription: string;
   benefits: string[];
   idealFor: string;
+  tools: string[];
 };
 
 export const services: Service[] = [
   {
     id: 1,
-    name: "Presoterapia",
-    description:
-      "Compresión neumática para favorecer la recuperación de las piernas.",
+    name: "Recovery Express",
+    description: "Una herramienta para una necesidad concreta.",
     duration: 30,
-    image: "/services/presoterapia.jpg",
+    price: 10000,
+    image: "/services/recovery-express.jpg",
     longDescription:
-      "Sesión de compresión neumática mediante botas de presoterapia. El tratamiento aplica ciclos de presión sobre las piernas para acompañar los procesos de recuperación del deportista.",
+      "Una sesión breve y enfocada en una necesidad concreta. El profesional selecciona la herramienta más adecuada según el objetivo de la sesión.",
     benefits: [
-      "Sensación de piernas más livianas",
-      "Recuperación después del entrenamiento",
-      "Relajación de las piernas",
+      "Sesión de 30 minutos",
+      "Una herramienta de recuperación",
+      "Atención orientada a una necesidad concreta",
     ],
     idealFor:
-      "Deportistas que buscan complementar su recuperación después de entrenamientos o competencias.",
+      "Personas que buscan una sesión puntual de recuperación o bienestar.",
+    tools: ["Boots", "Cold Tub", "Sauna", "Muscle Gun", "Body Roll"],
   },
   {
     id: 2,
-    name: "Crioterapia",
-    description:
-      "Sesión de recuperación mediante exposición controlada al frío.",
-    duration: 15,
-    image: "/services/crioterapia.jpg",
+    name: "Recovery Deportivo",
+    description: "Dos herramientas para necesidades complementarias.",
+    duration: 45,
+    price: 14000,
+    image: "/services/recovery-deportivo.jpg",
     longDescription:
-      "Sesión de exposición controlada al frío utilizando nuestro equipamiento de crioterapia.",
+      "Una sesión que combina dos herramientas para abordar necesidades complementarias dentro de una estrategia de recuperación deportiva.",
     benefits: [
-      "Exposición controlada al frío",
-      "Sensación de recuperación después del esfuerzo",
-      "Complemento para determinadas estrategias de recuperación",
+      "Sesión de 45 minutos",
+      "Combinación de dos herramientas",
+      "Atención adaptada al momento del deportista",
     ],
     idealFor:
-      "Deportistas que incorporan el frío dentro de su estrategia de recuperación.",
+      "Deportistas que buscan una sesión más completa después de entrenamientos o competencias.",
+    tools: ["Muscle Gun → Boots", "Cold Tub → Boots", "Sauna → Boots"],
   },
   {
     id: 3,
-    name: "Sauna",
-    description:
-      "Sesión de calor para complementar la recuperación y relajación.",
-    duration: 30,
-    image: "/services/sauna.jpg",
+    name: "Recovery Completo",
+    description: "Tres etapas para una experiencia completa.",
+    duration: 60,
+    price: 18000,
+    image: "/services/recovery-completo.jpg",
     longDescription:
-      "Sesión de calor en sauna diseñada como complemento dentro de una estrategia de recuperación y relajación.",
+      "Una experiencia de 60 minutos que combina tres etapas de recuperación: sauna, Cold Tub y Boots.",
     benefits: [
-      "Relajación",
-      "Sensación de bienestar",
-      "Complemento de la recuperación",
+      "Sesión de 60 minutos",
+      "Tres etapas de recuperación",
+      "Experiencia completa",
     ],
     idealFor:
-      "Deportistas que buscan complementar su recuperación con una sesión de calor.",
+      "Deportistas que buscan una experiencia completa de recuperación.",
+    tools: ["Sauna", "Cold Tub", "Boots"],
   },
   {
     id: 4,
-    name: "Body Roll",
-    description: "Masaje mecánico orientado a la recuperación muscular.",
-    duration: 20,
-    image: "/services/body-roll.jpg",
+    name: "Recovery Relax",
+    description: "Una experiencia pensada para relajarse y desconectar.",
+    duration: 60,
+    price: 16000,
+    image: "/services/recovery-relax.jpg",
     longDescription:
-      "Sesión utilizando el sistema Body Roll para trabajar las zonas musculares seleccionadas.",
+      "Una experiencia de bienestar que combina sauna, Boots y Boss Calm en un espacio pensado para relajarse y bajar el ritmo.",
     benefits: [
-      "Relajación muscular",
-      "Sensación de piernas más livianas",
-      "Complemento de la recuperación",
+      "Sesión de 60 minutos",
+      "Sauna",
+      "Boots + Boss Calm",
+      "Espacio pensado para la relajación",
     ],
-    idealFor: "Deportistas que buscan complementar su recuperación muscular.",
+    idealFor:
+      "Personas que buscan relajarse, desconectar y disfrutar una experiencia de bienestar.",
+    tools: ["Sauna", "Boots", "Boss Calm"],
   },
   {
     id: 5,
-    name: "Muscle Gun",
-    description: " Masaje mecánico orientado a la recuperación muscular",
-    duration: 20,
-    image: "/services/muscle-gun.jpg",
+    name: "Recovery Personalizado",
+    description: "Una sesión adaptada a las necesidades de cada persona.",
+    duration: 60,
+    price: 0,
+    image: "/services/recovery-personalizado.jpg",
     longDescription:
-      "Aplicación localizada de percusión muscular utilizando Muscle Gun en las zonas seleccionadas.",
+      "Una modalidad de atención en la que el profesional adapta el servicio, la combinación de herramientas y los parámetros de la sesión según la situación de cada persona.",
     benefits: [
-      "Trabajo localizado",
-      "Relajación muscular",
-      "Complemento de la recuperación",
+      "Atención personalizada",
+      "Combinación de herramientas según la situación",
+      "Duración adaptable",
+      "Sesión individualizada",
     ],
     idealFor:
-      "Deportistas que necesitan un trabajo localizado sobre determinados grupos musculares.",
+      "Deportistas que necesitan una sesión adaptada a su situación particular.",
+    tools: ["Combinación personalizada"],
   },
 ];

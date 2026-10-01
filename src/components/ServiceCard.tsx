@@ -17,11 +17,14 @@ function ServiceCard({ service, onOpen }: serviceCardProps) {
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold">{service.name}</h3>
-        <p className="mt-3 leading-relaxed text-neutral-600">
+        <p className="mt-3 min-h-14 leading-relaxed text-neutral-600">
           {service.description}
         </p>
-        <p className="mt-4 tex-sm font-semibold text-neutral-500">
+        <p className="mt-4 tex-sm font-semibold text-neutral-500 inline-block">
           {service.duration} minutos
+        </p>
+        <p className="mt-4 tex-sm font-semibold text-neutral-500 inline-block ml-3">
+          ${service.price}
         </p>
         <button
           type="button"

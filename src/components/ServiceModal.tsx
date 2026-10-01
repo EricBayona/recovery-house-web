@@ -67,6 +67,19 @@ function ServiceModal({ service, onClose, onBook }: ServiceModalProps) {
             </ul>
           </div>
 
+          <div className="mt-6">
+            <h3 className="text-lg font-bold">¿Qué incluye?</h3>
+
+            <ul className="mt-3 space-y-2">
+              {service.tools.map((tool) => (
+                <li key={tool} className="flex gap-3 text-neutral-600">
+                  <span className="text-neutral-950">•</span>
+                  {tool}
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Ideal para */}
           <div className="mt-6">
             <h3 className="text-lg font-bold">¿Para quién está pensada?</h3>
