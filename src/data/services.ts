@@ -35,7 +35,7 @@ export const services: Service[] = [
     name: "Recovery Deportivo",
     description: "Dos herramientas para necesidades complementarias.",
     duration: 45,
-    price: 14000,
+    price: 15000,
     image: "/services/recovery-deportivo.jpg",
     longDescription:
       "Una sesión que combina dos herramientas para abordar necesidades complementarias dentro de una estrategia de recuperación deportiva.",
@@ -53,7 +53,7 @@ export const services: Service[] = [
     name: "Recovery Completo",
     description: "Tres etapas para una experiencia completa.",
     duration: 60,
-    price: 18000,
+    price: 20000,
     image: "/services/recovery-completo.jpg",
     longDescription:
       "Una experiencia de 60 minutos que combina tres etapas de recuperación: sauna, Cold Tub y Boots.",
