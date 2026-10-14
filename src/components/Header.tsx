@@ -29,6 +29,13 @@ function Header({ title }: HeaderProps) {
           </a>
 
           <a
+            href="#nuestroEspacio"
+            className="text-sm font-medium text-neutral-600 transition hover:text-neutral-950"
+          >
+            Nuestro Espacio
+          </a>
+
+          <a
             href="#booking"
             className="bg-neutral-950 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-neutral-800"
           >
@@ -60,6 +67,14 @@ function Header({ title }: HeaderProps) {
                 className="font-medium"
               >
                 Servicios
+              </a>
+
+              <a
+                href="#nuestroEspacio"
+                onClick={() => setMenuOpen(false)}
+                className="font-medium"
+              >
+                Nuesto Espacio
               </a>
 
               <a

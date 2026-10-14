@@ -83,7 +83,9 @@ function Home() {
         </div>
       </section>
 
-      <AboutRecovery />
+      <section id="nuestroEspacio" px-6 py-24>
+        <AboutRecovery />
+      </section>
 
       <InstagramSection />
 
