@@ -25,7 +25,7 @@ function AboutRecovery() {
 
         <div className="overflow-hidden bg-neutral-900 shadow-2xl">
           <video
-            controls
+            muted
             preload="metadata"
             playsInline
             className="aspect-video w-full object-cover"
