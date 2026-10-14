@@ -4,6 +4,7 @@ import BookingForm from "../components/BookingForm";
 import { useState } from "react";
 import ServiceModal from "../components/ServiceModal";
 import InstagramSection from "../components/InstagramSection";
+import AboutRecovery from "../components/AboutRecovery";
 
 function Home() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
@@ -81,6 +82,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <AboutRecovery />
 
       <InstagramSection />
 
