@@ -49,7 +49,7 @@ function Footer() {
             <p>Direccion: Carlos Pelegrini 256 - Aguilares-Tucuman</p>
             <p>Celular: (03865)439185</p>
             <a
-              href="https://wa.me/5493865439185"
+              href="https://wa.me/5493865213417"
               target="_blank"
               rel="noreferrer"
               className="block transition hover:text-white"

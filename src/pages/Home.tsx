@@ -5,6 +5,7 @@ import { useState } from "react";
 import ServiceModal from "../components/ServiceModal";
 import InstagramSection from "../components/InstagramSection";
 import AboutRecovery from "../components/AboutRecovery";
+import HowItWorks from "../components/HowItworks";
 
 function Home() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
@@ -32,8 +33,8 @@ function Home() {
             </h1>
 
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-neutral-200 md:text-xl">
-              Recuperación deportiva pensada para deportistas que quieren llegar
-              mejor a su próximo entrenamiento o competencia.
+              Un espacio para recuperar tu energía, relajarte y dedicarte a tu
+              bienestar.
             </p>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -82,6 +83,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <HowItWorks />
 
       <section id="nuestroEspacio" px-6 py-24>
         <AboutRecovery />

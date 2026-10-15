@@ -44,7 +44,7 @@ function BookingForm({ selectedService }: BookingFormProps) {
    Duracion: ${selectedService.duration} minutos
    Fecha: ${date}
    `;
-    const whatsappUrl = `https://wa.me/5493865439185?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5493865213417?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, "_blank");
   }
